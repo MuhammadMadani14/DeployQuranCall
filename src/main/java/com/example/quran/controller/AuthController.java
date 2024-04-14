@@ -37,6 +37,7 @@ public class AuthController {
     @Autowired
     AuthService authService;
 
+
     @PostMapping("/signin")
     public ResponseEntity<?> signIn(@Valid @RequestBody LoginRequest loginRequest){
         try {
